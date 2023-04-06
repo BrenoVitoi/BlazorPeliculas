@@ -1,0 +1,12 @@
+C:\Users\Breno\source\repos\BlazorPeliculas\BlazorPeliculas\Shared\bin\Debug\net7.0\BlazorPeliculas.Shared.deps.json
+C:\Users\Breno\source\repos\BlazorPeliculas\BlazorPeliculas\Shared\bin\Debug\net7.0\BlazorPeliculas.Shared.dll
+C:\Users\Breno\source\repos\BlazorPeliculas\BlazorPeliculas\Shared\bin\Debug\net7.0\BlazorPeliculas.Shared.pdb
+C:\Users\Breno\source\repos\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net7.0\BlazorPeliculas.Shared.csproj.AssemblyReference.cache
+C:\Users\Breno\source\repos\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net7.0\BlazorPeliculas.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Breno\source\repos\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net7.0\BlazorPeliculas.Shared.AssemblyInfoInputs.cache
+C:\Users\Breno\source\repos\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net7.0\BlazorPeliculas.Shared.AssemblyInfo.cs
+C:\Users\Breno\source\repos\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net7.0\BlazorPeliculas.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Breno\source\repos\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net7.0\BlazorPeliculas.Shared.dll
+C:\Users\Breno\source\repos\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net7.0\refint\BlazorPeliculas.Shared.dll
+C:\Users\Breno\source\repos\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net7.0\BlazorPeliculas.Shared.pdb
+C:\Users\Breno\source\repos\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net7.0\ref\BlazorPeliculas.Shared.dll
