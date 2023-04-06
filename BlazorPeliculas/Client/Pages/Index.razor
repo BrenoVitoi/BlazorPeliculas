@@ -6,13 +6,36 @@
 
      <h4>Ejemplo foreach</h4>
 
-      @foreach (var pelicula in ObtenerPeliculas())
+    @if (Peliculas is null)
     {
-        <div>
-            <p>Título: <b>@pelicula.Titulo</b></p>
-            <p>Fecha lanzamiento: <b>@pelicula.FechaLanzamiento.ToString("dd MMM yyyy")</b></p>
-        </div>
+        <img
+            alt="cargando"
+        src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" />
     }
+    else if (Peliculas.Count == 0)
+    {
+        <p>No hay películas para mostrar.</p>
+    }
+    else
+    {
+        @foreach (var pelicula in Peliculas)
+        {
+            <div>
+                <p>
+                    Título: <b>@pelicula.Titulo</b>
+
+                    @if (DateTime.Today.Subtract(pelicula.FechaLanzamiento).Days <= 14)
+                    {
+                        <span style="color:red">(NUEVO!)</span>
+                    }
+
+                </p>
+                <p>Fecha lanzamiento: <b>@pelicula.FechaLanzamiento.ToString("dd MMM yyyy")</b></p>
+            </div>
+        }
+    }
+
+ @*    
 
     <h4>Ejemplo for</h4>
 
@@ -23,6 +46,7 @@
             <p>Fecha lanzamiento: <b>@Peliculas[i].FechaLanzamiento.ToString("dd MMM yyyy")</b></p>
         </div>
     }
+    *@
 
 </div>
 
@@ -31,7 +55,14 @@
 
     Pelicula WakandaForever {get { return ObternerPelicula(); }}
 
-    List<Pelicula> Peliculas {get { return ObtenerPeliculas(); }}
+    List<Pelicula>? Peliculas { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(3000);
+        //Peliculas = ObtenerPeliculas();
+        Peliculas = new List<Pelicula>();
+    }
 
     Pelicula ObternerPelicula()
     {
@@ -46,7 +77,7 @@
     {
         return new List<Pelicula>()
         {
-            new Pelicula{Titulo = "Wakanda Forever", FechaLanzamiento = new DateTime(2022, 11, 11)},
+            new Pelicula{Titulo = "Wakanda Forever", FechaLanzamiento = new DateTime(2023, 04, 06)},
             new Pelicula{Titulo = "Moana", FechaLanzamiento = new DateTime(2016, 11, 23)},
             new Pelicula{Titulo = "Inception", FechaLanzamiento = new DateTime(2010, 7, 16)},
 
